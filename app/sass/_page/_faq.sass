@@ -1,0 +1,122 @@
+.faq
+	padding-top: 85px
+	padding-bottom: 100px
+	position: relative
+	z-index: 1
+	.faq-bg
+		position: absolute
+		left: 0
+		bottom: 0
+		opacity: 0.1
+		z-index: -1
+	.faq-bg-two
+		position: absolute
+		right: 0
+		top: 0
+		opacity: 0.1
+		z-index: -1	
+	&__list
+
+		display: flex
+		flex-direction: row
+		&-left
+			width: 17%
+			margin-right: 15%
+			h2
+				margin-bottom: 65px
+				font-weight: 700
+				font-size: 24px
+				margin-bottom: 15px
+				position: relative
+				color: #239fec
+				&:before
+					position: absolute
+					content: ''
+					height: 3px
+					width: 3000px
+					background-color: #239fec		
+					top: 14px
+					right: 129%
+				&:after
+					position: absolute
+					content: ''
+					border-radius: 50%
+					height: 15px
+					width: 15px
+					background-color: #239fec	
+					top: 8px
+					left: -68px	
+			p
+				color: #696969
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 15px
+				line-height: 1.3
+			a
+				font-weight: 700
+				font-size: 14px
+				color: #239fec
+		&-right
+			width: 65%
+		.item
+			margin-bottom: 20px
+			box-shadow: 0 2px 15px rgba(#239fec, .4)
+			border-radius: 35px
+	.calc__title
+		padding: 15px 35px
+		transition: all 0.9s
+		font-size: 16px
+		color: #239fec
+		font-weight: 700
+		position: relative
+		border-radius: 50px
+		
+		
+		&:before
+			position: absolute
+			content: ''
+			height: 8px
+			width: 8px
+			border-right: 1px solid #239fec
+			border-top: 1px solid #239fec
+			transform: rotate(135deg)
+			right: 51px
+			top: 26px
+			transition: all 0.9s
+		&:after
+			position: absolute
+			content: ''
+			width: 30px
+			height: 30px
+			border-radius: 100%
+			right: 40px
+			top: 15px
+			border: 2px solid #239fec
+			transition: all 0.9s
+		p
+			width: 90%	
+	.calc__active
+		&:before
+			position: absolute
+			content: ''	
+			transform: rotate(-45deg)
+			transition: all 0.9s
+			top: 28px	
+			border-right: 1px solid #ff8c00
+			border-top: 1px solid #ff8c00
+		&:after
+			border: 2px solid #ff8c00	
+
+	.calc__content
+
+		margin-bottom: 40px
+		padding: 0 40px 30px
+		display: none 
+		p
+			text-align: right
+			color: #696969
+			font-size: 14px
+			font-weight: 400
+			line-height: 1.7
+	.questions .calc__content
+		display: none							
