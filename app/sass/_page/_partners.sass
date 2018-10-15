@@ -1,0 +1,111 @@
+.partners
+	&__link
+		color: #d1d1d1
+		border: 2px solid #239fec
+		border-radius: 30px
+		padding: 12px 15px
+		margin-bottom: 75px
+
+	&__statistics
+		display: flex
+		flex-wrap: wrap
+
+		&_item
+			position: relative
+			width: 35%
+			border: 2px solid #239fec
+			margin-bottom: 45px
+			padding: 5px 30px 30px 30px
+			border-radius: 30px
+			margin-right: 15%
+			background-color: #fff
+
+			&:nth-child(3n+1):nth-child(even)
+				margin-right: 0
+				margin-left: 15%
+				&::after
+					left: auto
+					right: 0
+				&::before
+					left: auto
+					right: 280%
+
+			&:nth-child(2n+1)
+				&::after
+					content: ''
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translate(0, -50%)
+					width: 280%
+					height: 2px
+					background: #239fec
+					z-index: -1
+				&::before
+					content: ''
+					position: absolute
+					left: 280%
+					top: 50%
+					transform: translate(0, -50%)
+					width: 20px
+					height: 20px
+					background: #239fec
+					border-radius: 100%
+					z-index: -1
+
+			&:nth-child(3n)
+				margin-right: 0
+				margin-left: 15%
+				&::after
+					left: -40%
+					right: auto
+				&::before
+					left: -40%
+					right: auto
+
+			h4
+				color: #ff8c00
+				font-size: 16px
+				margin-bottom: 20px
+				text-align: center
+
+			p
+				display: flex
+				justify-content: space-between
+				color: #239fec
+				line-height: 1.3
+				margin-bottom: 15px
+				text-align: left
+
+				span, b
+					width: 47%
+
+				b
+					text-align: right
+
+			.red
+				color: #ff8c00
+
+			.green
+				color: #1ce900
+
+			div
+				content: ''
+				position: absolute
+				right: 40px
+				top: -30px
+				height: 60px
+				width: 60px
+				border: 2px solid #239fec
+				background-color: #fff
+				border-radius: 100%
+				overflow: hidden
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				max-height: 35px
+				max-width: 35px
+				transform: translate(-50%, -50%)
+

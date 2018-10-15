@@ -78,3 +78,26 @@ gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browsersync.reload)
 });
+//--------------------------------svg-sprite-----------------------------
+gulp.task('symbols', function() {
+  return gulp.src('app/img/icon/*.svg')
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(cheerio({
+      run: function($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+        $('[class]').removeAttr('class');
+        $('title').remove();
+        $('defs').remove();
+        $('style').remove();
+        $('svg').attr('style', 'display:none');
+      }
+    }))
+    .pipe(rename('symbols.html'))
+    .pipe(gulp.dest('app/img'));
+});
+
+gulp.task('default', ['watch']);

@@ -1,0 +1,88 @@
+.cabinet
+	padding: 160px 0 70px
+
+	h2
+		position: relative
+		font-size: 24px
+		font-weight: 700
+		color: #239fec
+		padding-left: 25px
+		z-index: 1
+		margin-bottom: 110px
+
+		span
+			position: absolute
+			left: -1000%
+			top: 50%
+			transform: translate(0, -50%)
+			height: 3px
+			width: 1000%
+			background-color: #239fec
+
+		&::before
+			content: ""
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+			border-radius: 50%
+			height: 10px
+			width: 10px
+			background-color: #239fec
+			z-index: 1
+		&::after
+			content: ""
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(-5px, -50%)
+			border-radius: 50%
+			height: 20px
+			width: 20px
+			background-color: #a7d9f7
+			z-index: -1
+
+	&__user
+		position: relative
+		font-size: 16px
+		border: 2px solid #239fec
+		height: 100px
+		width: 80%
+		border-radius: 100px
+		text-align: center
+		color: #239fec
+		font-weight: 700
+		padding-top: 65px
+		margin-bottom: 70px
+
+		&_logo
+			position: absolute
+			width: 130px
+			height: 130px
+			top: -50%
+			left: 50%
+			transform: translate(-50%, -15%)
+			border: 2px solid #239fec
+			border-radius: 100%
+			background: #fff
+			overflow: hidden
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				max-width: 130px
+				max-height: 130px
+
+	&__list
+		li
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+		a
+			font-weight: 800
+			color: #239fec
+			transition: all .3s
+			&:hover, &:focus
+				color: #ff8c00

@@ -1,16 +1,33 @@
 
 @media only screen and (max-width : 1200px)
+	.nav
+		li
+			margin-right: 20px
 
-	.header
+	.partners
+		overflow: hidden
+		&__statistics
+			&_item
+				width: 45%
+				margin-right: 5%
+				&::before
+					display: none
+				&:nth-child(3n)
+					margin-left: 0
+					&:after
+						left: 0
+				&:nth-child(3n+1):nth-child(even)
+					margin-left: 5%
 
 
 @media only screen and (max-width : 992px)
-	#thanks
-		padding: 40px
-
-	.modal
-		width: 320px
-		padding: 40px
+	.cabinet
+		&__user
+			margin: 0 auto 20px
+		&__list
+			text-align: center
+			li
+				margin-bottom: 5px
 
 	.nav
 		position: fixed
@@ -19,17 +36,17 @@
 		height: 100%
 		flex-direction: column
 		right: -100%
-		top: 80px
+		top: 0
+		background-color: #239fec
 		z-index: -1
-		background: rgba(0, 0, 0, .9)
 		transition: all .3s
 
 		ul
 			display: flex
 			flex-direction: column
 			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
+			margin-top: 
+			margin: 100px 40px 40px 40px
 
 		li
 			margin: 0
@@ -44,23 +61,26 @@
 				transform: scale(0)
 				transition: all .3s
 				position: absolute
-				bottom: 0
-				width: 80%
-				height: 1px
-				background-color: $accent
+				bottom: -3px
+				width: 110%
+				height: 10px
+				background-color: #ffa333
 				z-index: -1
 
 			&:hover
-				color: $accent
+				color: #fff
 				text-decoration: none
 				&::before
 					transform: scale(1)
 
 			&:focus
-				color: $accent
+				color: #fff
 				text-decoration: none
 				&::before
 					transform: scale(1)
+		&-active
+			right: 0
+			
 
 	.hamburger
 		display: block
@@ -71,15 +91,129 @@
 		right: 0
 
 
+	.header
+		&__container
+			padding-right: 70px
+		&__logo
+			padding: 8px 0
+			img
+				height: auto
+				width: 140px
+	
+	.main
+		padding-top: 60px
+		&--page
+			padding-top: 100px
+
+	.footer
+		.nav, .hamburger
+			display: none
+
+		.social
+			width: auto
 
 @media only screen and (max-width : 767px)
-	.header
+	.partners__statistics_item
+		width: 100%
+		margin-right: 0
+		&::after
+			display: none
+		&:nth-child(3n+1):nth-child(even)
+			margin-left: 0
+
+		&:last-child
+			margin-bottom: 0
+
+	.profile
+		&__invest
+			width: 100%
+
+		&__statistics_item
+			width: 100%
+			margin-right: 0
+			&:nth-child(odd)
+				margin-right: 0
+			&:last-child
+				margin-bottom: 0
 
 @media only screen and (max-width : 576px)
-	.header
+	.header__logo
+		img
+			width: 100px
 
 @media only screen and (max-width : 480px)
+	.profile
+		&__list_item
+			width: 100%
+			margin-bottom: 25px
+			&:nth-child(5n), &:nth-child(6n)
+				margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+
+		&__invest_item
+			width: 100%
+			margin-bottom: 20px
+			&:nth-child(3), &:nth-child(4)
+				margin-bottom: 20px
+
+
+	.login-in
+		&__section
+			h3
+				margin-bottom: 35px
+		&__list
+			padding: 35px
+			margin-bottom: 35px
+		&__btn
+			margin-bottom: 35px
+
+	.registration
+		&__list
+			padding: 25px 30px
+			margin-bottom: 35px
+			&_item
+				width: 100%
+
+		&__btn
+			margin-bottom: 35px
+
+		&__radio
+			margin-bottom: 35px
+
+	.support-form
+		h2
+			margin-bottom: 35px
+		&__list_item
+			width: 100%
+			margin-bottom: 20px
+
+	.enter
+		.entrance-btn
+			margin-right: 0
+		.registration-btn, .entrance-btn
+			font-size: 12px
+			padding: 0 10px
+			margin-right: 5px
+		.user-img
+			display: none
+
+
 	.header
+		&__logo
+			img
+				width: 80px
+		&__container
+			padding-right: 40px
+
+	.hamburger
+		&__item
+			width: 25px
+			&::before, &::after
+				width: 25px
+
+
+
 
 
 

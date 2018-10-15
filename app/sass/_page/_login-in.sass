@@ -1,0 +1,60 @@
+.login-in
+	padding: 40px 0
+
+	&__section
+
+		h3
+			text-align: right
+			font-size: 24px
+			color: #fff
+			margin-bottom: 50px
+	
+	&__list
+		background: #ff8c00
+		border-radius: 25px
+		padding: 60px
+		box-shadow: 0 0 25px rgba(0, 0, 0, .7)
+		margin-bottom: 70px
+
+		&_item
+			position: relative
+			margin-bottom: 25px
+			border: 2px solid #fff
+			border-radius: 30px
+			&::before, &::after
+				content: ""
+				position: absolute
+				right: 30px
+				top: 0
+			&::before
+				height: 15px
+				width: 10px
+				background: #239fec
+			&::after
+				top: 3px
+				right: 29px
+				border-bottom: 6px solid #fff
+				border-left: 6px solid transparent
+				border-right: 6px solid transparent
+				border-top: 6px solid transparent
+
+			&:last-child
+				margin-bottom: 0
+
+			input
+				border: none
+
+	&__btn
+		margin-bottom: 65px
+	
+	&__link
+		display: flex
+		justify-content: space-between
+		a
+			width: 50%
+			text-align: right
+			color: #fff
+			font-weight: 700
+			&:hover, &:focus
+				text-decoration: underline
+

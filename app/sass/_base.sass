@@ -8,7 +8,7 @@ $fontawesome: 'fontawesome', sans-serif
 
 //----------------------color---------------------
 $accent: #000
-$text: #fafafa
+$text: #000
 //---------------------end-color---------------------
 
 body
@@ -56,7 +56,6 @@ h1
 		font-weight: 700
 		opacity: 0.1
 
-
 ul
 	margin: 0
 	padding: 0
@@ -68,27 +67,42 @@ i
 	color: #fff
 
 input, textarea
-	border: #808080 1px solid
-	border-radius: 0
+	border: #239fec 2px solid
+	border-radius: 30px
+	padding: 0 15px
+	width: 100%
+	color: #239fec
 	outline: none
 	box-shadow: none
-	-webkit-appearance: none
+	// -webkit-appearance: none
 	&:focus:required:invalid
-		border-color: #808080
+		border-color: #239fec
 		outline: none
 		box-shadow: none
 		-webkit-appearance: non
 	&:required:valid
-		border-color: #808080
+		border-color: #239fec
 		outline: none
 		box-shadow: none
 		-webkit-appearance: non
 
 	&::placeholder
-		color: #808080
-		font-size: 12px
-		text-transform: uppercase
+		color: #d1d1d1
+		font-size: 14px
 		line-height: 1
+
+input
+	height: 35px
+	line-height: 35px
+	font-size: 14px
+
+textarea
+	line-height: 1.4
+	padding: 10px 15px
+	border-radius: 20px
+	&::placeholder
+		line-height: 1.4
+
 
 b, strong
 	font-weight: 700
