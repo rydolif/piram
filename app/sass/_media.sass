@@ -1,5 +1,19 @@
 
 @media only screen and (max-width : 1200px)
+	.statistic__list-wrap p
+		font-size: 35px
+
+	.reviews-carysel
+		&__container
+			&::before
+				left: 39.8%
+
+	.how-work
+		.content-list
+			justify-content: space-between
+			li
+				width: 24%
+				font-size: 18px
 	.nav
 		li
 			margin-right: 20px
@@ -19,8 +33,119 @@
 				&:nth-child(3n+1):nth-child(even)
 					margin-left: 5%
 
+	.faq__list-left
+		width: 35%
+		margin-right: 5%
+
 
 @media only screen and (max-width : 992px)
+	.about h2 span
+		width: 989%
+
+	.statistic
+		&__list
+			flex-wrap: wrap
+			&-wrap
+				width: 100%
+				justify-content: center
+				&:last-child
+					margin-bottom: 0
+
+		.top__about
+			flex-wrap: wrap
+			&-item
+				width: 100%
+				margin-right: 0
+				margin-bottom: 90px
+				&:last-child
+					margin-bottom: 0
+
+	.common
+		h2
+			&::before
+				left: 0
+			&::after
+				left: 0
+
+			span
+				left: -1000%
+	
+	.leader-content .leader-list__wrap
+		width: 48%
+	
+	.statistic-carysel
+		&::before
+			display: none
+
+		h2
+			&:after
+				right: 225px
+
+		&__item
+			width: 100%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+		&__container
+			padding-top: 30px
+
+	.reviews-carysel
+		.swiper-button-next
+			right: 7%
+
+		.swiper-button-prev
+			left: 10%
+
+		&__container
+			&::before
+				left: 36%
+
+
+	.reviews
+		margin-top: 61px
+		padding-top: 130px
+
+		textarea
+			max-height: 300px
+
+		h2
+			margin-top: 70px
+			margin-bottom: 40px
+			padding-right: 30px
+
+		.support-form__list_content
+			margin-bottom: 30px
+
+	.how-work
+		padding: 60px 0 0 0
+
+		&-two
+			padding: 40px 0
+
+		.content-list
+			align-items: flex-start
+			padding-top: 40px
+			font-size: 16px
+
+		h2
+			margin-bottom: 20px
+
+		&__wrap
+			margin-bottom: 30px
+			&::before
+				bottom: -30px
+
+			&_item
+				&::before
+					bottom: -40px
+				&::after
+					bottom: -50px
+
+
+	.settings__avatar
+		margin: 40px auto
+
 	.cabinet
 		&__user
 			margin: 0 auto 20px
@@ -112,7 +237,90 @@
 		.social
 			width: auto
 
+
 @media only screen and (max-width : 767px)
+	
+	.statistic-carysel
+		h2
+			&::before, &::after, span
+				display: none
+
+
+	.reviews-carysel__container::before
+		left: 31%
+
+	.leader-content .leader-list__wrap
+		width: 100%
+		&:last-child
+			margin-bottom: 0
+	
+	.reviews
+		&__list
+			&_item
+				width: 100%
+				margin-right: 0
+	.about
+		&__list
+			&-left
+				display: none
+			&-right
+				width: 100%
+				text-align: left
+				margin-left: 0
+
+
+	.how-work
+
+		&__container
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+		&__wrap
+			flex-direction: column
+			width: 50%
+			&::before
+				height: 100%
+				width: 3px
+				left: 80%
+				top: 0
+
+
+			&_item
+				margin-bottom: 15px
+				&::before, &::after
+					left: 170%
+					top: 40%
+
+				&::after
+					top: 32%
+
+		.content-list
+			flex-direction: column
+			width: 50%
+
+			li
+				width: 100%
+
+	
+	.faq
+		padding: 40px 0
+		&__list
+			flex-wrap: wrap
+			h2
+				&::before, &::after
+					display: none
+
+			&-left
+				width: 100%
+				margin-bottom: 30px
+				margin-right: 0
+
+			&-right
+				width: 100%
+
+			.item
+
+
 	.partners__statistics_item
 		width: 100%
 		margin-right: 0
@@ -136,12 +344,95 @@
 			&:last-child
 				margin-bottom: 0
 
+
 @media only screen and (max-width : 576px)
+	.reviews-carysel
+
+		h2
+			margin-bottom: 30px
+
+		&__container::before
+			display: none
+
+		&__wrapper
+			margin-bottom: 30px
+
+		.swiper-button-next
+			right: 0
+
+		.swiper-button-prev
+			left: 0
+
+	.reviews
+		margin-top: 42px
+
 	.header__logo
 		img
 			width: 100px
 
+	.settings__avatar
+		width: 90%
+	
+	.how-work
+		&__wrap
+			width: 125px
+			&::before
+				display: none
+			&_item
+				width: 110px
+				height: 110px
+				&::before, &::after
+					left: 125%
+
+				img
+					max-width: 60px
+		&__list
+			width: 50%
+			
+		.content-list
+			li
+				font-size: 14px
+
+	.main
+		padding-top: 48px
+
+
 @media only screen and (max-width : 480px)
+	
+	.statistic__list-wrap
+		flex-wrap: wrap
+
+	.hero .content
+		h1
+			margin-bottom: 250px
+			padding-left: 0
+			font-size: 40px
+
+		p
+			margin-bottom: 150px
+			span
+				font-size: 70px
+	
+	.reviews__list_item
+		padding: 50px 25px 25px 25px
+
+	.main
+		padding-top: 42px
+
+	.about
+		li
+			padding-left: 50px
+
+	.regulation-project
+		padding: 40px 0
+		h2
+			margin-bottom: 40px
+
+	.settings
+		&__avatar
+			width: 100%
+		&__form
+			width: 90%
 	.profile
 		&__list_item
 			width: 100%
@@ -212,14 +503,32 @@
 			&::before, &::after
 				width: 25px
 
+	.leader-content
+		overflow: hidden
 
+		.leader-list
+			top: 50px
 
+			&__wrap
+				&:last-child
+					margin-bottom: 55px
 
+	.top-leader
+		h2
+			margin-bottom: 30px
 
+	.statistic-carysel__title
+		padding: 40px 0
 
+	.reviews-carysel
+		&__wrapper
+			height: 440px
+			margin-bottom: 50px
 
+		&__slider
+			width: 290px
 
-
-
-
-
+		&__slide
+			height: 440px
+			&_content
+				transform: translate(0, 30%)

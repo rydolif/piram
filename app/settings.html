@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Подержак</title>
+	<title>Настройка</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body class="body-page body-page--support">
+<body class="body-page">
 
 	<!-- <div class="preloader">
 		<div class="pulse"></div>
@@ -44,6 +44,7 @@
 					</ul>
 				</nav>
 
+
 				<div class="enter">
 					<div class="user-img">
 						<img src="img/icon/user.svg" alt="">
@@ -56,53 +57,85 @@
 		</div>
 	</header>
 
-	<main class="main main--page">
+	<main class="main main--page profile cabinet">
+		
+		<div class="container">
+			<div class="row">
 
-		<section class="support-form">
-			<div class="container">
-				<div class="row">
+				<div class="col-lg-4">
 
-					<div class="offset-xl-3 col-xl-6 offset-md-2 col-md-8">
-						<h2>ПОДДЕРЖКА<span></span></h2>
-						<form>
-							<div id="status"></div>
-							<div class="support-form__list">
+					<h2>ЛИЧНЫЙ КАБИНЕТ<span></span></h2>
 
-								<div class="support-form__list_item" id="tests-login">
-									<span class="icon"></span>
-									<div class="input" id="test-login">
-										<input type="text" name="login" class="form-control" placeholder="Login">
-									</div>
-								</div>
-
-								<div class="support-form__list_item" id="tests-email">
-									<span class="icon"></span>
-									<div class="input" id="test-email">
-										<input type="text" name="email" class="form-control" placeholder="example@gmail.com">
-									</div>
-								</div>
-
-								<div class="support-form__list_item support-form__list_content" id="tests-content">
-									<span class="icon"></span>
-									<div class="input" id="test-content">
-										<textarea rows="10" placeholder="Чтобы получить ответ максимально быстро - постарайтесь как можно точнее описать проблему."></textarea>
-									</div>
-								</div>
-
-								<input type="hidden" name="type" value="auth">
-								<div class="support-form__list_btn">
-									<button class="button">
-										<span>Отправить</span>
-									</button>
-								</div>
-
-							</div>
-						</form>
+					<div class="cabinet__user">
+						<div class="cabinet__user_logo">
+							<img src="img/leader-logo.png" alt="">
+						</div>
+						<p>Login</p>
 					</div>
 
+					<ul class="cabinet__list">
+						<li><a href="profile.html">Профиль</a></li>
+						<li><a href="partners.html">Мои партнеры</a></li>
+						<li><a href="settings.html">Настройки</a></li>
+						<li><a href="advertising.html">Рекламные материалы</a></li>
+					</ul>
+				
 				</div>
+
+				<div class="col-lg-8">
+					
+					
+					<div class="settings__avatar">
+						<div class="settings__avatar_logo">
+							<img src="img/leader-logo.png" alt="">
+						</div>
+						<div class="settings__avatar_link">
+							<a href="#">Удалить аватар</a>
+							<a href="#">Загрузить новый аватар</a>
+						</div>
+					</div>
+
+					<form>
+						<div id="status"></div>
+						<div class="settings__form support-form__list">
+
+							<h3>Изменить пароль</h3>
+
+							<div class="settings__form_item support-form__list_item" id="tests-pass">
+								<span class="icon"></span>
+								<div class="input" id="test-pass">
+									<input type="text" name="pass" class="form-control" placeholder="Старый пароль">
+								</div>
+							</div>
+
+							<div class="settings__form_item support-form__list_item" id="tests-naw-pass">
+								<span class="icon"></span>
+								<div class="input" id="test-naw-pass">
+									<input type="text" name="naw-pass" class="form-control" placeholder="Новый пароль">
+								</div>
+							</div>
+
+							<div class="settings__form_item support-form__list_item" id="tests-test-pass">
+								<span class="icon"></span>
+								<div class="input" id="test-test-pass">
+									<input type="text" name="test-pass" class="form-control" placeholder="Повторите новый пароль">
+								</div>
+							</div>
+
+							<input type="hidden" name="type" value="auth">
+							<div class="support-form__list_btn">
+								<button class="button">
+									<span>Изменить</span>
+								</button>
+							</div>
+
+						</div>
+					</form>
+
+				</div>
+
 			</div>
-		</section>
+		</div>
 
 	</main>
 

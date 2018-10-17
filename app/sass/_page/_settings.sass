@@ -1,0 +1,48 @@
+.settings
+
+	&__avatar
+		position: relative
+		display: flex
+		justify-content: space-between
+		width: 65%
+		margin: 90px auto
+
+		&_logo
+			position: relative
+			width: 130px
+			height: 130px
+			border: 2px solid #239fec
+			border-radius: 100%
+			background: #fff
+			overflow: hidden
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				max-width: 130px
+				max-height: 130px
+		&_link
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			align-items: flex-end
+
+			a
+				display: block
+				color: #239fec
+				margin-bottom: 15px
+				font-weight: 700
+				&:first-child
+					font-weight: 300
+				&:last-child
+					margin-bottom: 0
+
+
+	&__form
+		width: 65%
+		margin: 0 auto
+		&_item
+			width: 100%
+			margin-button: 30px
